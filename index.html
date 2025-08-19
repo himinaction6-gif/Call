@@ -6,7 +6,6 @@
   <title>Call Himanshu</title>
   <meta property="og:title" content="Call Himanshu">
   <meta property="og:description" content="Click to start a secure SIP call with Himanshu">
-  <!-- Social preview now will still show your image -->
   <meta property="og:image" content="https://himinaction6-gif.github.io/Call/IMG_0719.jpeg">
   <meta property="og:type" content="website">
   <style>
@@ -28,22 +27,21 @@
       max-width: 350px;
       width: 90%;
     }
-    /* Circle container */
     .avatar-container {
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      background-color: #fff;       /* white fill */
-      border: 4px solid #2f80ed;    /* blue ring */
+      background-color: #fff;
+      border: 4px solid #2f80ed;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0 auto 20px auto;     /* center + spacing below */
-      overflow: hidden;             /* ensures image stays inside */
+      margin: 0 auto 20px auto;
+      overflow: hidden;
     }
     .avatar-container img {
-      max-width: 80%;   /* scale image smaller */
-      max-height: 80%;  /* prevents touching borders */
+      max-width: 80%;
+      max-height: 80%;
       object-fit: contain;
     }
     h1 {
@@ -66,6 +64,7 @@
       border-radius: 50px;
       transition: all 0.3s ease;
       box-shadow: 0 4px 12px rgba(47,128,237,0.4);
+      margin: 10px 0;
     }
     a.call-btn:hover {
       background: #1c5bbf;
@@ -75,14 +74,18 @@
 </head>
 <body>
   <div class="card">
-    <!-- Circular wrapper around your H image -->
     <div class="avatar-container">
       <img src="IMG_0719.jpeg" alt="H Logo">
     </div>
     <h1>Himanshu</h1>
-    <p>Click below to start a secure SIP call</p>
-    <a class="call-btn" href="https://webrtc.sipthor.net/call/himinaction6@sylk.link" target="_blank">
-      📞 Call Me
+    <p>Choose how you’d like to call</p>
+    <!-- Audio button -->
+    <a class="call-btn" href="https://webrtc.sipthor.net/call/himinaction6@sylk.link?media=audio" target="_blank">
+      🎤 Audio Call
+    </a>
+    <!-- Video button -->
+    <a class="call-btn" href="https://webrtc.sipthor.net/call/himinaction6@sylk.link?media=audio,video" target="_blank">
+      📹 Video Call
     </a>
   </div>
 </body>
