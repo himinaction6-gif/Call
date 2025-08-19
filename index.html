@@ -51,9 +51,9 @@
     }
     p {
       color: #666;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
-    a.call-btn {
+    .call-btn {
       display: inline-block;
       padding: 15px 40px;
       background: #2f80ed;
@@ -64,11 +64,16 @@
       border-radius: 50px;
       transition: all 0.3s ease;
       box-shadow: 0 4px 12px rgba(47,128,237,0.4);
-      margin: 10px 0;
     }
-    a.call-btn:hover {
+    .call-btn:hover {
       background: #1c5bbf;
       box-shadow: 0 6px 18px rgba(47,128,237,0.6);
+    }
+    .tip {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #888;
+      line-height: 1.4;
     }
   </style>
 </head>
@@ -78,15 +83,13 @@
       <img src="IMG_0719.jpeg" alt="H Logo">
     </div>
     <h1>Himanshu</h1>
-    <p>Choose how you’d like to call</p>
-    <!-- Audio button -->
-    <a class="call-btn" href="https://webrtc.sipthor.net/call/himinaction6@sylk.link?media=audio" target="_blank">
-      🎤 Audio Call
+    <p>Click below to start a secure SIP call</p>
+    <!-- One main call button -->
+    <a class="call-btn" href="https://webrtc.sipthor.net/call/himinaction6@sylk.link" target="_blank">
+      📞 Call Me
     </a>
-    <!-- Video button -->
-    <a class="call-btn" href="https://webrtc.sipthor.net/call/himinaction6@sylk.link?media=audio,video" target="_blank">
-      📹 Video Call
-    </a>
+    <!-- Instruction for audio-only -->
+    <p class="tip">If you only want an audio call,<br>just deny camera permission when asked.</p>
   </div>
 </body>
 </html>
