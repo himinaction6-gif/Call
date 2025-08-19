@@ -6,7 +6,7 @@
   <title>Call Himanshu</title>
   <meta property="og:title" content="Call Himanshu">
   <meta property="og:description" content="Click to start a secure SIP call with Himanshu">
-  <!-- Updated to your real image -->
+  <!-- Your uploaded image -->
   <meta property="og:image" content="https://himinaction6-gif.github.io/Call/IMG_0719.jpeg">
   <meta property="og:type" content="website">
   <style>
@@ -29,12 +29,14 @@
       width: 90%;
     }
     .avatar {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
+      width: 150px;          /* slightly bigger circle */
+      height: 150px;
+      border-radius: 50%;    /* makes it circular */
+      object-fit: cover;     /* fills the circle nicely */
+      object-position: center; /* keeps it centered */
       margin-bottom: 20px;
       border: 4px solid #2f80ed;
+      background-color: #fff; /* in case image doesn't fill */
     }
     h1 {
       margin: 10px 0;
@@ -65,7 +67,7 @@
 </head>
 <body>
   <div class="card">
-    <!-- Avatar updated to your real image -->
+    <!-- Avatar uses the uploaded image -->
     <img class="avatar" src="IMG_0719.jpeg" alt="Profile Photo">
     <h1>Himanshu</h1>
     <p>Click below to start a secure SIP call</p>
