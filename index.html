@@ -6,7 +6,7 @@
   <title>Call Himanshu</title>
   <meta property="og:title" content="Call Himanshu">
   <meta property="og:description" content="Click to start a secure SIP call with Himanshu">
-  <!-- Your uploaded image -->
+  <!-- Your uploaded H logo -->
   <meta property="og:image" content="https://himinaction6-gif.github.io/Call/IMG_0719.jpeg">
   <meta property="og:type" content="website">
   <style>
@@ -29,14 +29,14 @@
       width: 90%;
     }
     .avatar {
-      width: 150px;          /* slightly bigger circle */
-      height: 150px;
-      border-radius: 50%;    /* makes it circular */
-      object-fit: cover;     /* fills the circle nicely */
-      object-position: center; /* keeps it centered */
+      width: 180px;            /* larger circle for clarity */
+      height: 180px;
+      border-radius: 50%;      /* makes it a circle */
+      object-fit: contain;     /* show the whole H with no crop */
+      background-color: #fff;  /* white fill behind the H */
+      padding: 15px;           /* space around logo inside circle */
       margin-bottom: 20px;
       border: 4px solid #2f80ed;
-      background-color: #fff; /* in case image doesn't fill */
     }
     h1 {
       margin: 10px 0;
@@ -67,8 +67,8 @@
 </head>
 <body>
   <div class="card">
-    <!-- Avatar uses the uploaded image -->
-    <img class="avatar" src="IMG_0719.jpeg" alt="Profile Photo">
+    <!-- Avatar now displays your H logo clean inside a circle -->
+    <img class="avatar" src="IMG_0719.jpeg" alt="H Logo">
     <h1>Himanshu</h1>
     <p>Click below to start a secure SIP call</p>
     <a class="call-btn" href="https://webrtc.sipthor.net/call/himinaction6@sylk.link" target="_blank">
